@@ -94,6 +94,30 @@
       pointer-events: none;
     }
 
+    /* ── TEST CALL BUTTONS (temporanei, per debug tel://) ──── */
+    .call-test-buttons {
+      margin-left: auto;
+      display: flex;
+      gap: 10px;
+    }
+
+    .call-test-buttons a {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-decoration: none;
+      color: var(--white);
+      padding: 8px 14px;
+      border-radius: 20px;
+    }
+
+    .call-test-buttons a.variant-double-slash {
+      background: #c0392b;
+    }
+
+    .call-test-buttons a.variant-single-colon {
+      background: var(--green-cta);
+    }
 
   </style>
 </head>
@@ -106,6 +130,11 @@
            onerror="this.style.display='none'; document.querySelector('.logo-text').style.display='block';">
       <span class="logo-text">sorgenia</span>
     </a>
+
+    <div class="call-test-buttons">
+      <a class="variant-double-slash" href="tel://800120410">tel://800120410</a>
+      <a class="variant-single-colon" href="tel:800120410">tel:800120410</a>
+    </div>
   </header>
 
   <!-- ── HERO ── -->
